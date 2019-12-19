@@ -1,0 +1,88 @@
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+
+::before, ::after {
+	box-sizing: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+html {
+    display: block;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+}
+head　{
+    display: none;
+}
+
+body {
+    background-color: #fff;
+    line-height: 1.231;
+    color: #444;
+    font-family: font-face-apple-system,BlinkMacSystemFont,Hiragino Sans,Hiragino Kaku Gothic ProN,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 13px;
+}
+
+#layout, body, html {
+    height: 100%;
+}
+
+:root {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+:root:not(input):not(textarea) {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+form{
+	display: block;
+}
+
+fieldset, table, td, th {
+    border: none;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, input, select {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+}
+
+label {
+    cursor: default;
+}
+
+*:focus {
+	outline: none;
+}

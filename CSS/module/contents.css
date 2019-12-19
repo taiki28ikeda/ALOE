@@ -1,0 +1,117 @@
+.contents{
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+@media (min-width: 768px){
+.contents {
+    display: -webkit-box;
+    display: flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+}
+
+@media (min-width: 768px){
+.contents .contentsInner {
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    box-shadow: 0 6px 17px 0 rgba(0,0,0,.1);
+    width: 500px!important;
+}
+}
+
+.logo{
+    margin: 119px 0 75px 0 ;
+    text-align: center;
+}
+
+.logo img{
+    height: 50%;
+    width: 50%;
+}
+
+.FormGroup {
+    padding: 0 16px;
+    border: none;
+}
+
+.InputTxt{
+    position: relative;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.InputTxt > input{
+    font-size: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    position: relative;
+    border: none;
+    width: 100%;
+}
+
+.InputTxtLabel {
+	color: #D8D8D8; 
+	font-size: 17px;
+    position: absolute;
+    pointer-events: none;
+    left:5px;
+    top: 12px ;
+	transition: all 0.2s ease;
+}
+
+input:focus ~ .InputTxtLabel, input.used ~ .InputTxtLabel {
+	top: -10px;
+    transform: scale(.65);
+    left: -10px;
+	color: #5ECE55;
+}
+
+.bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: "";
+    height: 2px;
+	position: absolute;
+    background: #5ece55; 
+    transition: all 0.2s ease;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 100%; }
+
+
+button{
+    -webkit-appearance: none;
+    margin-top:32px;
+    font-size: 20px;
+    line-height: 52px;
+    color: #ffffff;
+    background-color: #5ece55;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+}
+
+.primary{
+    margin-top: 29px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.primary a{
+    margin-left: 16px ;
+    font-size :15px ;
+    color: #FF8787 ;
+
+}
